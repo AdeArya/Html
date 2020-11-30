@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms</title>
+    </head>
+    <body>
+        <form action="target.html" target="_blank" method="GET" autocomplete="on">
+            <fieldset>
+                <legend>Formulir Mahasiswa</legend>
+
+                <!-- nama -->
+                <label for="nama">Nama : </label><br>
+                <input type="text" id="nama" name="nama" size="20" required autofocus><br><br>
+                
+                <!-- panggilan -->
+                <label for="panggilan">Nama panggilan : </label><br>
+                <input type="text" id="panggilan" name="panggilan" disabled><br><br>
+
+                <!--nim-->
+                <label for="nim">Nim : </label><br>
+                <input type="number" id="nim" name="nim" maxlength="8" min="11111111" max="99999999" step="1000"><br><br>
+
+                <!-- gender -->
+                <label for="gender">Gender : </label><br>
+                <input type="radio" id="pria" name="gender">
+                <label for="pria">Pria</label><br>
+                <input type="radio" id="wanita" name="gender">
+                <label for="wanita">Wanita</label><br><br>
+    
+                <!-- jurusan -->
+                <label for="jurusan">Jurusan</label><br>
+                <select id="jurusan" name="jurusan" size="2" multiple>
+                    <option value="teknik informatika">teknik informatika</option>
+                    <option value="sistem informasi">sistem informasi</option>
+                    <option value="sistem komputer" selected>sistem komputer</option>
+                </select><br><br>
+                
+                <!-- hobby -->
+                <label for="hobby">Hobby : </label><br>
+                <input type="checkbox" id="koding" name="hobby">
+                <label for="koding">Koding</label><br>
+                <input type="checkbox" id="design" name="hobby">
+                <label for="design">Design</label><br><br>
+    
+                <!-- pesan -->
+                <label for="pesan">Pesan : </label><br>
+                <textarea id="pesan" name="pesan" rows="5px" cols="20px"></textarea><br><br>
+
+                <!-- foto -->
+                <label for="foto">foto</label><br>
+                <input type="file" id="foto" name="foto" multiple><br><br>
+
+                <!-- image -->
+                <label for="gambar">contoh gambar</label><br>
+                <input type="image" src="abstract.jpg" id="gambar" name="gambar" alt="abstract" haight="200px" width="400px"><br><br>
+
+                <!-- setuju -->
+                <label for="setuju">Apakah anda setuju ?</label><br>
+                <input type="text" id="setuju" name="setuju" value="setuju" readonly><br><br>
+    
+                <!-- tombol -->
+                <input type="submit" value="submit" formmethod="POST" formtarget="_self" formnovalidate="formnovalidate">
+                <input type="submit" value="submit admin" formaction="target2.html" formmethod="POST">
+            </fieldset>
+        </form>
+    </body>
+</html>
